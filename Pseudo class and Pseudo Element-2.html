@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Class and Pseudo Element-2</title>
+        <style>
+              .demo:hover{
+            background-color: brown
+              }
+              p:hover{
+                background : yellowgreen;
+                color: white;
+              }
+              p:first-child{
+                font-size: 1.5rem;
+                color: blue;
+                font-weight: bold;
+              }
+              p:last-child{
+                font-size: 1.5rem;
+                color: red;
+                font-weight: bold;
+              }
+              p:nth-child(2){
+                font-size: 1.5rem;
+                color: green;
+                font-weight: bold;
+              }
+                ul li:nth-last-child(even){
+                    color: orange;
+                    font-weight: bold;
+                }
+                ul li:nth-last-child(odd){
+                    color: purple;
+                    font-weight: bold;
+                }
+                ul li:first-of-type{
+                    text-decoration: underline;
+                }
+                ul li:last-of-type{
+                    text-decoration: underline
+                }
+                ul li:nth-of-type(3n+1){
+                    font-size: 1.2rem;
+                    color: aqua;
+                }
+                ::selection{
+                    background-color: black;
+                    color: white;
+                }
+                .demo::before, .demo::after{
+                    content: "*****";
+                    font-size: 1.5rem;
+                    color: red;
+                    font-weight: bold;
+                }
+                input::placeholder{
+                    font-size: 0.5rem;
+                    color: gray;
+                    font-weight: bold;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="demo">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas itaque fugiat aliquam provident expedita labore molestiae omnis officia suscipit nisi atque doloremque, assumenda vitae fuga, aperiam, quibusdam cum cupiditate.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas itaque fugiat aliquam provident expedita labore molestiae omnis officia suscipit nisi atque doloremque, assumenda vitae fuga, aperiam, quibusdam cum cupiditate.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas itaque fugiat aliquam provident expedita labore molestiae omnis officia suscipit nisi atque doloremque, assumenda vitae fuga, aperiam, quibusdam cum cupiditate.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas itaque fugiat aliquam provident expedita labore molestiae omnis officia suscipit nisi atque doloremque, assumenda vitae fuga, aperiam, quibusdam cum cupiditate.
+        </p>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+        <p><span class="first-letter">L</span> ipsum dolor sit amet consectetur adipisicing elit. Qui consectetur laudantium, aspernatur, non natus nam, nisi explicabo eaque harum at facilis. Sapiente illo totam accusantium, sequi esse itaque corrupti in!</p>
+        <p><span class ="first-letter">I</span>psum dolor sit, amet consectetur adipisicing elit. Repudiandae, iure veniam a nam quibusdam quaerat at ratione quia necessitatibus dolor consequuntur enim vel quo molestias iusto commodi omnis! Quia, praesentium!</p>
+        <p><span class ="first-letter">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eveniet! Quisquam, eveniet! Quisquam, eveniet! Quisquam, eveniet! Quisquam, eveniet! Quisquam, eveniet! Quisquam, eveniet! Quisquam, eveniet!</p> 
+        <input type="text" placeholder="Select and see effect">
+    </body>
+</html>

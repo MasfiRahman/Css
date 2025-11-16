@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+    <meta charset="UTF-8">
+            <title>Selectors & Combinators</title>
+            <style>
+                h1{
+                    color: blue;
+                    background-color: red
+                }
+                #para1{
+                    color: green;
+                    background-color: yellow;
+                }
+                #para2{
+                    color: orange;
+                    background-color: blueviolet
+                }
+                #para3{
+                    color: brown;
+                    background-color: cyan
+                }
+                .para4{
+                    color: purple;
+                    background-color: chocolate;
+                    text-align: left;
+                }
+                .para5:hover{
+                    color: white;
+                    background-color: black;
+                    text-align: left;
+                }
+                .para6:hover{
+                    color: pink;
+                    background-color: grey;
+                    text-align: center;
+                }
+                
+            </style>
+            <style>
+                   *{
+                    background-color: yellowgreen;
+                    color: white;
+                }
+               
+                h2,p1,p2,p3{
+                    color: red;
+                    background-color: black;
+                }
+            </style>
+            <style>
+                div p{
+                    color: blue;
+                    background-color: orange;
+                }
+                
+                div >p{
+                    color: brown;
+                    background-color: #390000bb;
+                }
+                
+                div + p{
+                    color: aqua;
+                    background-color: indianred
+                }
+                div ~ p{
+                    color: green;
+                    background-color: darkblue
+                }
+            </style>
+      </head>
+      <body>
+            <h1> This is heading 1</h1>
+
+            <p id="para1"> This is paragraph 1</p>
+            <p id="para2"> This is paragraph 2</p>
+            <p id="para3"> This is paragraph 3</p>
+            <p class="para4"> This is paragraph 4</p>
+            <p class="para5"> This is paragraph 5</p>
+            <p class="para6"> This is paragraph 6</p>
+      </body>
+      <body>
+        <h2>This is heading 2</h2>
+
+        <p>This is paragraph 7</p>
+        <p>This is paragraph 8</p>
+        <p>This is paragraph 9</p>
+        <div>
+            <p>This is paragraph 10</p>
+            <p>This is paragraph 11</p>
+            <section> <p>This is paragraph 12</p></section>
+            <p>This is paragraph 13</p>
+        </div>
+        <p>This is paragraph 14</p>
+        <p>This is paragraph 15</p>
+      </body>
+</html>

@@ -1,0 +1,22 @@
+h1,h2{
+    background-color: lightseagreen;
+}
+<!--div{
+    <!--background-color: lightcoral;-->
+    <!--display: inline;-->
+-->}
+
+span{
+    background-color: lightgoldenrodyellow;
+}
+
+.e1{
+    width: 600px;
+    margin: auto;
+    border: 2px solid green
+}
+.e2{
+    max-width:600px;
+    margin: auto;
+    border: 2px solid green
+}

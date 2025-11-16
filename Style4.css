@@ -3,6 +3,7 @@
 /* b = number of class ,Pseudo class,attribute */
 /*c = number of element ,Pseudo element */
 /*a=0,b=0,c=1 === 001*/
+/* Its working with top to bottom approach */
 h1{
     background-color: brown;
 }
@@ -19,5 +20,5 @@ h1.title{
     background-color: yellow;
 }
 #heading {
-    background-color: orange;
+    background-color: orange; /* Only use id selector for highest priority */
 }

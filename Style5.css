@@ -1,6 +1,6 @@
 body{
     background-color: aquamarine;
-    background-image: url('Uap-logo.jpg');
+    background-image: url('Uap-logo.jpg');/*path of image*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

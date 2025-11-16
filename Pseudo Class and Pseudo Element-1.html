@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Class and Pseudo Element</title>
+    </head>
+    <style>
+        a.mylink:hover {
+            color: green;
+        }
+        input{
+            padding: 10px;
+            font-size: 1rem;
+            width: 150px;
+        }
+        input:hover{
+            background-color: green;
+        }
+        /*Pseudo class In Single colon*/
+        input:focus{
+            background-color: yellow;   
+        }
+        table tr:nth-child(odd){
+            background-color: red;
+        }
+        /*Pseudo Element In Double colon*/
+        p::first-letter{
+            font-size: 2rem;
+            color: blue;
+            font-weight: bold;
+        }
+        p::first-line{
+            font-size: 2rem;
+            color: orange;
+            font-weight: bold;
+        }
+        p::before{
+            content: ">";
+        }
+        p::after{
+            content: "<";
+        }
+    </style>
+    <body>
+        <a class="mylink" href="#">Tutorial</a>
+        <a href="#">Home</a>
+        <input type="text" placeholder="Enter Your Name" />
+        <table border="1">
+            <tr>
+                <th> Name </th>
+                <th> Age </th>
+            </tr>
+            <tr>
+                <td> John </td>
+                <td> 25 </td>
+            </tr>
+            <tr>
+                <td> Alice </td>
+                <td> 30 </td>
+            </tr>
+        </table>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius ipsa officiis minima, dolorum rerum veniam, laborum blanditiis quasi ex necessitatibus totam eum libero suscipit atque deserunt. Doloremque, omnis autem!</p>
+    </body>
+</html>

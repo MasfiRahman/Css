@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index and CSS3 Variables</title>
+    <style>
+        :root{/* Defining CSS3 Variables */
+            --primary-color: green;
+            --secondary-color: aqua;
+        }
+         div{
+            height: 250px;
+            width: 250px;
+         }
+         #div1{
+            /*background-color: green;*/ /*for browswers that do not support CSS3 variables*/
+            /*background-color: lightcoral;*/
+            /*background-color: var(--primary-color, lightcoral);/* Using CSS3 variable with fallback */
+            background-color: var(--primary-color);
+            position: absolute;
+            z-index: 1;/* Using z index for positioning and stacking order */
+         }
+         #div2{
+            /*background-color: aqua;*/ /*for browswers that do not support CSS3 variables*/
+            /*background-color: magenta;*/
+            background-color: var(--secondary-color);
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: -2;/* Using z index for positioning and stacking order */
+         }
+         @media screen and (max-width:600px){ /* Media Query to change CSS3 variables based on screen size */
+            :root{
+                --primary-color: orange;
+                --secondary-color: purple;
+            }
+            
+         }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>

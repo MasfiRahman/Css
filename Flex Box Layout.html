@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Layout</title>
+    <style>
+           .flex-container {
+            background-color: aqua;
+            display: flex;
+            flex-flow: wrap;
+            /*flex-wrap: wrap;/*to wrap the items to next line if they exceed the width*/
+            /*flex-wrap: nowrap;/* to prevent no wrapping of items*/
+            /*flex-wrap: wrap-reverse;/* to wrap the items to next line in reverse order*/
+            /*flex-direction: row; /*default value, items are placed in a row*/
+            /*flex-direction: column;*/ /* items are placed in a column*/
+            /*flex-direction: row-reverse;*/ /* items are placed in a row in reverse order*/
+            /*flex-direction: column-reverse;*/
+            /*flex-flow: row wrap; /* shorthand for flex-direction and flex-wrap */
+            /*justify-content: flex-start; /* align items to the start of the main axis*/
+            /*justify-content: flex-end;*/ /* align items to the end of the main axis*/
+            justify-content: center; /* align items to the center of the main axis*/
+            /*justify-content: space-between; /* distribute items evenly with space between them*/
+            /*justify-content: space-around; /* distribute items evenly with space around them*/
+            height: 300px; 
+            /*align-items: flex-start; /* align items to the start of the cross axis*/
+            align-items: center; /* align items to the center of the cross axis*/
+            /*align-items: flex-end; /* align items to the end of the cross axis*/
+           }
+           .flex-container > div{
+            width: 100px;
+            background-color: coral;
+            margin: 10px;
+            padding: 20px;
+            font-size: 35px;
+           }
+    </style>
+</head>
+<body>
+      <div class="flex-container">
+        <div class="div1" style="order: 2; flex-basis: 400px;">
+            div1
+        </div>
+        <div class="div2" style="order: 1;">
+            div2
+        </div>
+        <div class="div3" style="order: 3;">
+            div3
+        </div>
+        <div class="div4" style="order: 4;">
+            div4
+        </div>
+        <div class="div5" style="order: 5; flex-basis: 200px;">
+            div5
+        </div>
+        <div class="div6" style="order: 6;">
+            div6
+        </div>
+        <div class="div7" style="order: 7;">
+            div7
+        </div>
+        <div class="div8" style="order: 8;">
+            div8
+        </div>
+        <div class="div9" style="order: 1; flex-basis: 159px;">
+            div9
+            </div>
+
+        </div>
+</body>
+</html>

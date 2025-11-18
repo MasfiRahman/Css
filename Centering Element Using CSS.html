@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering Element Using CSS</title>
+    <style>
+           .main{
+            /*text-align: center;*/
+            width: 80%;
+            margin: 0 auto;/*for centering*/
+            background-color: pink;
+            height: 400px;
+
+            /* for centering
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            */
+            
+            position: relative;
+           }
+           h1{
+            width: 200px;
+            margin: 0 auto;
+           }
+           .desc{
+            background-color: green;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!--<h1>Bangladesh</h1>
+    </div>-->
+    <div class="desc">
+        <h3>Mirpur</h3>
+        <p>Duo dolor diam amet erat stet clita sadipscing ut et, et sadipscing et labore tempor ut justo sanctus diam et..</p>
+    </div>
+</body>
+</html>

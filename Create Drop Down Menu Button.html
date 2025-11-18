@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creting Drop down Menu Button</title>
+    <style>
+          .nav-bar{
+            background-color: aquamarine;
+            padding: 1% 7%;
+            text-align: center;
+          }
+          .nav-bar a{
+            color: rgb(10, 147, 210);
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            cursor: pointer;
+          }
+          .dropdown-containers{
+            display: inline;
+            position: relative;
+          }
+          .dropdown-content{
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background-color: aqua;
+            text-align: left;
+            min-width: 100px;
+            display: none;
+          }
+
+          .dropdown-content a{
+              display: block;
+          }
+          .dropdown-content a:hover{
+            background-color: rgb(255, 251, 0);
+          }
+          .dropdown-containers:hover .dropdown-content{
+              display: block;
+          }
+    </style>
+</head>
+<body>
+    <div class = "nav-bar">
+           <a href="#">Home</a>
+           <a href="#">Tutorial</a>
+           <div class="dropdown-containers">
+             <a href="#">ContactMe</a>
+                <div class="dropdown-content">
+                    <a href="#">Facebook</a>
+                    <a href="#">Email</a>
+                 </div>
+           </div>
+           <a href="#">About Me</a>
+    </div>       
+</body>
+</html>

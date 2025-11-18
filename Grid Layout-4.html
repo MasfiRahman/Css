@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Part 4 Responsive Grid Layout Design</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        /*background-color: aqua;*/
+        display: grid;
+        grid-template-rows: min-content auto min-content;/*for Using first place at minimum content,secondly auto content and then thirdly place at minimum content*/
+        grid-template-areas: 
+        'h'
+        'm'
+        'm'
+        'm'
+        'f'
+        ;
+    }
+    header{
+      grid-area: h;
+      background: pink;
+      width: 100%;
+      border: 2px solid;
+    }
+    main{
+        background-color: chocolate;
+        grid-area: m;
+        width: 100%;
+        height: 100%;
+    }
+    article{
+        display: grid;
+        grid-template-areas: 
+        's1 a1'
+        's2 a2'
+        's3 .'
+        ;
+        height: 100%;
+    }
+    section{
+        border: 2px solid;
+    }
+    aside{
+        background-color: coral;
+        border: 2px solid;
+    }
+    footer{
+        grid-area: f;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'n1 n2';
+        border: 2px solid;
+        background-color: aquamarine;
+    }
+    #sec1{grid-area: s1;}
+    #sec2{grid-area: s2;}
+    #sec3{grid-area: s3;}
+    #aside1{grid-area: a1;}
+    #aside2{grid-area: a2;}
+    #nav1{grid-area: n1;}
+    #nav2{grid-area: n2;}
+
+    @media screen and (max-width:600px){/*for Responsive mobile and any other Device Softoware  Design as per rotate*/ 
+        article{
+            grid-template-areas: 
+            's1'
+            's2'
+            's3'
+            'a1'
+            'a2';
+        }
+        footer{
+        grid-template-areas: 
+        'n1'
+        'n2'
+        ;
+        }
+    }
+</style>
+<body>
+    <header>
+        <nav>Header nav</nav>
+    </header>
+
+    <main>
+        <article>
+            <section id ="sec1">Section1</section>
+            <section id ="sec2">Section2</section>
+            <section id ="sec3">Section3</section>
+
+
+            <aside id ="aside1">Aside1</aside>
+            <aside id ="aside2">Aside2</aside>
+        </article>
+    </main>
+    <footer>
+          <nav id ="nav1">Nav1</nav>
+          <nav id ="nav2">Nav2</nav>
+    </footer>
+</body>
+</html>

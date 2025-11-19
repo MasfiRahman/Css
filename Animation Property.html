@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animation Property</title>
+    <style>
+        img{
+            max-width: 200px;
+            height: auto;
+            border: 5px solid black;
+            /*image centering*/
+            display: block;
+            margin: 0 auto;
+            /*image centering*/
+            margin-top: 100px;
+            border-radius: 50%;
+            
+        }
+        img:hover{
+             animation-name: img-anim;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes img-anim {
+            /*from*/0%{
+               border-color: orange;
+            }
+            50%{
+                border-color: green;
+            }
+            /*to*/100%{
+             border-color: red;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <img src="spiderman-iron-spider.jpg">
+</body>
+</html>

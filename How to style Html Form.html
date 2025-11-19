@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form</title>
+
+    <!-- google icons -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+
+    <style>
+        input[type=text]{
+            width: 100%;
+            box-sizing: border-box;           
+            margin: 10px 0;
+
+            /* colored inputs */
+            background-color: indianred;
+            color: white;
+
+            /* bordered inputs */
+            padding: 10px 20px;
+
+
+            /* bordered inputs */
+            border: 3px solid brown;
+            border-radius: 5px;
+
+            /* for bottom border only */
+            /* border: none;
+            border-bottom: 3px solid green; */
+
+            
+        }
+
+        #search{
+            /* Input with icon/image */
+            background-image: url("images/search.png");
+            background-repeat: no-repeat;
+            background-position: 5px 8px; /* x axis and y axis */
+            font-size: 1rem;
+            background-color: white;
+            padding: 15px 40px;
+            width: 150px;
+
+            /*Animated Search Input*/
+            transition: width 0.4s ease-in-out;
+        }
+
+      
+
+        #search:focus {
+            width: 100%;
+        }
+
+
+        /* focused inputs */
+        input[type=text]:focus {
+            background-color: coral;
+        }
+        textarea{
+            resize: none;
+            width: 50%;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        input[type="button"],input[type="reset"]{
+            width: 100px;
+            border: none;
+            background-color: orange;
+            color: whitesmoke;
+            padding: 10px;
+            cursor: pointer;
+        }
+        select{
+            width: 60%;
+            padding: 20px;
+            border: none;
+            background-color: tomato;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   <form action="">
+    <select name="subjects_name" id="subjects">
+        <option>C Programming</option>
+        <option>C++ Programming</option>
+        <option>Python Programming</option>
+        <option>Java Programming</option>
+        <option>Go Programming</option>
+        <option>Html Language</option>
+        <option>Css Language</option>
+    </select>
+    <textarea name="" id="" cols="30" rows="10">Write your comments here </textarea>
+    <p></p>
+    <input type="button" value="Submit">
+    <input type="reset" value="Reset">
+   </form>
+
+   
+    <input type="text" id="search" name="search" placeholder="Search">
+
+    <p></p>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" >
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" >
+
+    <!-- <span class="material-icons">
+        search
+    </span> -->
+
+</body>
+</html>

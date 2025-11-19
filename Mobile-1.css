@@ -1,0 +1,57 @@
+ /*Css for Mobile*/
+        body{
+            background-color: rgb(255, 102, 0);
+        }
+        *{
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+        body{
+            margin: 0;
+        }
+        h1{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        a{
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: underline;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+        /* for mobile*/
+        [class*="col-"]{
+            width: 100%;
+        }
+        .nav-menu{
+            background-color: rgb(195, 60, 7);
+            padding: 1% 7%;
+            text-align: center;
+        }
+        .nav-menu h1{
+            color: white;
+            margin: 0;
+            padding-top: 10px;
+        }
+        .nav-menu::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .navbar-menu{
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+        }
+        .navbar-menu a{
+            background-color: teal;
+            border-radius: 10px;
+            margin: 7px 0px;
+            padding: 10px;
+        }
+        .navbar-menu a:hover{
+            background-color: rgb(26, 94, 154);
+        }

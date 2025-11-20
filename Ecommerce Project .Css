@@ -109,7 +109,7 @@ nav{
     width: 20rem;
 }
 /*Footer Ends here*/
-@media (max-width:992px) {
+@media (max-width:992px) {/*Changing This part in Css portion*/
     .flex-space-around{
         flex-direction: column;
         gap: 1rem;

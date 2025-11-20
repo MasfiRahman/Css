@@ -23,7 +23,7 @@ img{
     width: 100%;
     height: auto;
 }
-.flex-center{
+.flex-center{/*Create*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +97,7 @@ nav{
 }
 /*Navbar ends here*/
 /*Header starts here*/
-.header{
+.header{/*Changes this and Create */
     padding: 4rem 0;
     height: 80vh;
     background: url(banner-image.jpg) no-repeat center;
@@ -163,7 +163,7 @@ nav{
     .hidden{
         display: none;
     }
-    .header{
+    .header{/*Changes this*/
         height: 100vh;
     }
 }

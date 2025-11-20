@@ -1,5 +1,4 @@
 /*reset code and common starts here*/
-/*Basic Way to First*/
 
 :root{
     --primary-color:green;
@@ -28,7 +27,7 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+}/*Changing  in Button Part*/
 .btn{
     border: none;
     padding: var(--padding);
@@ -90,6 +89,7 @@ nav{
 }
 /*Navbar ends here*/
 /*Footer Starts here*/
+/*Changing in footer and subscribe button part*/
 .footer{
     padding: 1rem;
     background-color: var(--primary-color);

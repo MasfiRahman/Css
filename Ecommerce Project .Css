@@ -27,7 +27,7 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}/*Changing  in Button Part*/
+}
 .btn{
     border: none;
     padding: var(--padding);
@@ -40,6 +40,9 @@ img{
 }
 /*reset code and common ends here*/
 /*Navbar starts here*/
+#menu-icon{
+    display: none;
+}
 nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.9rem;
@@ -111,6 +114,15 @@ nav{
         flex-direction: column;
         gap: 1rem;
         padding: 1rem 0;
+    }
+    #menu-icon{
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
     }
 }
 @media (max-width:768px) {

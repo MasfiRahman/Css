@@ -13,9 +13,9 @@
 </head>
 <body>
     <!--Navbar starts here-->
-    <i class="fas fa-bars fa-2x" id="menu-icon"></i><!--Changes This part-->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
     <nav id="menu" class="hidden">
-        <ul class="nav-upper flex-space-around"> <!--to this part-->
+        <ul class="nav-upper flex-space-around"> 
             <li class="nav_list"><a href="Ecommerce Project.html" class="nav_link">Home</a></li>
              <li class="nav_list"><a href="Register.html" class="nav_link">Register</a></li>
               <li class="nav_list"><a href="Login.html" class="nav_link">Login</a></li>
@@ -41,27 +41,104 @@
     <!--Navbar ends here-->
       <!--Header Starts here-->
       <header class="header">
-        <div class="banner flex-space-around"><!--Changes this-->
-            <marquee class="banner_title"behavior="" direction="">30% Sales going on</marquee><!--Small animation add as a marquee text--><!--Changes this-->
-            <div class="features flex-space-around"><!--Changes this-->
-                  <article class="feature flex-center"><!--Changes this-->
-                    <i class="fa-solid fa-truck feature_icon"></i><!--Changes this-->
-                    <h3>Shopping within 6 days</h3><!--Changes this-->
+        <div class="banner flex-space-around">
+            <marquee class="banner_title"behavior="" direction="">30% Sales going on</marquee><!--Small animation add as a marquee text-->
+            <div class="features flex-space-around">
+                  <article class="feature flex-center">
+                    <i class="fa-solid fa-truck feature_icon"></i>
+                    <h3>Shopping within 6 days</h3>
                   </article>
-                  <article class="feature flex-center"><!--Changes this-->
-                    <i class="fa-brands fa-rocketchat feature_icon"></i><!--Changes this-->
-                    <h3>Support 24/7</h3><!--Changes this-->
+                  <article class="feature flex-center">
+                    <i class="fa-brands fa-rocketchat feature_icon"></i>
+                    <h3>Support 24/7</h3>
                   </article>
-                  <article class="feature flex-center"><!--Changes this-->
-                    <i class="fa-regular fa-credit-card feature_icon"></i><!--Changes this-->
-                    <h3>Safe Payment</h3><!--Changes this-->
-                  </article><!--Changes this-->
+                  <article class="feature flex-center">
+                    <i class="fa-regular fa-credit-card feature_icon"></i>
+                    <h3>Safe Payment</h3>
+                  </article>
             </div>
         </div>
       </header>
       <!--Header ends here-->
-    <main>
-        <h2>HomePage</h2>
+    <main class="flex-center">
+        <div class="sidebar">
+          <section class="categories-section">
+               <h3 class="section-title">Categories</h3>
+               <ul class="list">
+                <li class="list_item">
+                  <label for="phone">
+                    <input type="checkbox" name="phone" id="phone" value="phone">Phone
+                  </label>
+                </li>
+                <li class="list_item">
+                  <label for="tablets">
+                    <input type="checkbox" name="tablets" id="tablets" value="tablets">Tablets
+                  </label>
+                </li>
+                <li class="list_item">
+                  <label for="televisions">
+                    <input type="checkbox" name="televisions" id="televisions" value="televisions">Televisions
+                  </label>
+                </li>
+                <li class="list_item">
+                  <label for="computers">
+                    <input type="checkbox" name="computers" id="computers" value="computers">Computers
+                  </label>
+                </li>
+                <li class="list_item">
+                  <label for="headphones">
+                    <input type="checkbox" name="headphones" id="headphones" value="headphones">Headphones
+                  </label>
+                </li>
+               </ul>
+          </section>
+          <section class="price-section">
+               <h3 class="section-title">Price</h3>
+               <ul class="list">
+                <li class="list_item">
+                  <label for="price1">
+                    <input type="radio" name="price1" id="price1" value="[0,30]">$0-$30
+                  </label>
+                </li>
+                  <li class="list_item">
+                  <label for="price2">
+                    <input type="radio" name="price2" id="price2" value="[31,50]">$31-$50
+                  </label>
+                </li>
+                <li class="list_item">
+                  <label for="price3">
+                    <input type="radio" name="price3" id="price3" value="[51,100]">$51-$100
+                  </label>
+                </li>
+                <li class="list_item">
+                  <label for="price4">
+                    <input type="radio" name="price4" id="price4" value="[101,500]">$101-$500
+                  </label>
+                </li>
+                <li class="list_item">
+                  <label for="price5">
+                    <input type="radio" name="price5" id="price5" value="[501+]">$501+
+                  </label>
+                </li>
+               </ul>
+          </section>
+          <section class="shipping-section">
+               <h3 class="section-title">Shipping Options</h3>
+               <ul class="list">
+                <li class="list_item">
+                  <label for="free">
+                    <input type="radio" name="shipping" id="free" value="free">Free
+                  </label>
+                </li>
+                  <li class="list_item">
+                  <label for="paid">
+                    <input type="radio" name="shipping" id="paid" value="paid">Paid
+                  </label>
+                </li>
+               </ul>
+          </section>
+        </div>
+        <div class="main-content">Main Content</div>
     </main>
     <!--Footer Starts here-->
     <footer class="footer flex-space-around">
@@ -75,6 +152,6 @@
         </div>
     </footer>
     <!--Footer Ends here-->
-    <script src="./Ecommerce Project.js"></script><!--Adding js for collapsing Button-->
+    <script src="./Ecommerce Project.js"></script>
 </body>
 </html>

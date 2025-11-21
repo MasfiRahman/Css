@@ -229,6 +229,23 @@ main{
 .learn-more{
     color: green;
 }
+/*Pagination Starts here*/
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination_btn{
+    border-width: 1px 1px px 0; 
+    border-style: solid;
+    width: 20px;
+}
+.pagination_btn:first-child{
+    border-width: 1px 1px 1px 1px; 
+    border-style: solid;
+    width: 20px;
+}
+/*Pagination Ends here*/
 /*Main ends here*/
 /*Footer Starts here*/
 .footer{

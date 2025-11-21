@@ -247,7 +247,7 @@ main{
 }/*Pagination ends of Working for this Part*/
 /*Pagination Ends here*/
 /*Product Details Starts Here*/
-.product_details-left{
+.product_details-left{/*Products Details Designing sart on working*/
      flex: 1;
 }
 .product_details-left img{
@@ -259,7 +259,7 @@ main{
 }
 .product_details-right{
     flex: 1;
-}
+}/*Ends Here*/
 /*Product Details Ends  Here*/
 /*Main ends here*/
 /*Footer Starts here*/
@@ -291,18 +291,18 @@ main{
         margin: 1rem 0;
         cursor: pointer;
     }
-    .hidden{/*Changes this*/
+    .hidden{
         display: none;
     }
-    .header{/*Changes this*/
+    .header{
         height: 100vh;
     }
-    .products{/*Changes this*/
+    .products{
         grid-template-columns: repeat(2,minmax(0,1fr));
     }
 }
 @media (max-width:768px) {
-    .flex-center{/*Changes this*/
+    .flex-center{
         flex-direction: column;
         gap: 1rem;
         padding: 1rem 0;

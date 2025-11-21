@@ -230,7 +230,7 @@ main{
     color: green;
 }
 /*Pagination Starts here*/
-.pagination{
+.pagination{/*Pagination Working for this Part*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +244,7 @@ main{
     border-width: 1px 1px 1px 1px; 
     border-style: solid;
     width: 20px;
-}
+}/*Pagination ends of Working for this Part*/
 /*Pagination Ends here*/
 /*Main ends here*/
 /*Footer Starts here*/

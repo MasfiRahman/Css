@@ -246,6 +246,21 @@ main{
     width: 20px;
 }/*Pagination ends of Working for this Part*/
 /*Pagination Ends here*/
+/*Product Details Starts Here*/
+.product_details-left{
+     flex: 1;
+}
+.product_details-left img{
+    height: 20rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.product_details-right{
+    flex: 1;
+}
+/*Product Details Ends  Here*/
 /*Main ends here*/
 /*Footer Starts here*/
 .footer{

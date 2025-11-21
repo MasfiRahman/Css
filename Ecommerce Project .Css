@@ -149,12 +149,12 @@ main{
  flex: 3;
  padding: var(--padding);
 }
-.actions_sort select{
+.actions_sort select{/*Changes this part to width height correction*/
     width: 15rem;
     height: 2rem;
    padding: var(--padding);
 }
-.actions_search input{
+.actions_search input{/*Changes this part to  height correction*/
     padding: var(--padding);
     height: 2rem;
     width: 15rem;

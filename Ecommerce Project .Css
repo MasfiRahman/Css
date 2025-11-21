@@ -149,11 +149,14 @@ main{
  flex: 3;
  padding: var(--padding);
 }
-.actions_sort select{/*New part adding for filter and search bar*/
+.actions_sort select{
+    width: 15rem;
+    height: 2rem;
    padding: var(--padding);
 }
 .actions_search input{
     padding: var(--padding);
+    height: 2rem;
     width: 15rem;
 }
 .actions_search button{
@@ -194,7 +197,7 @@ main{
     .hidden{
         display: none;
     }
-    .header{/*Changes this*/
+    .header{
         height: 100vh;
     }
 }

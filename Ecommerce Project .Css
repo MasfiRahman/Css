@@ -131,23 +131,36 @@ nav{
     font-size: 3rem;
 }
 /*Header ends here*/
-/*Main starts here*//*Sidebar are working starts this part */
+/*Main starts here*/
 main{
     padding: 4rem 0;
     min-height: 80vh;
 }
 .sidebar{
   flex: 1;
-}
-.main-content{
- flex: 3;
- padding: var(--padding);
- display: flex;
+  display: flex;
+  padding: var(--padding);
  justify-content: center;
  flex-direction: column;
  gap: 1rem;
  align-self: flex-start;
-}/*Ends here*/
+}
+.main-content{
+ flex: 3;
+ padding: var(--padding);
+}
+.actions_sort select{
+   padding: var(--padding);
+}
+.actions_search input{
+    padding: var(--padding);
+    width: 15rem;
+}
+.actions_search button{
+    margin-left: -0.3rem;
+    border: 1px solid;
+    padding: 0.55rem;
+}
 /*Main ends here*/
 /*Footer Starts here*/
 .footer{

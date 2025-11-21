@@ -97,7 +97,7 @@ nav{
 }
 /*Navbar ends here*/
 /*Header starts here*/
-.header{/*Changes this and Create */
+.header{
     padding: 4rem 0;
     height: 80vh;
     background: url(banner-image.jpg) no-repeat center;
@@ -149,7 +149,7 @@ main{
  flex: 3;
  padding: var(--padding);
 }
-.actions_sort select{
+.actions_sort select{/*New part adding for filter and search bar*/
    padding: var(--padding);
 }
 .actions_search input{

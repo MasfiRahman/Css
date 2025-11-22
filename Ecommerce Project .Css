@@ -329,6 +329,27 @@ textarea{
     width: 30%;
 }
 /*Register and Login Ends here*/
+/*Profile Starts here*/
+.profile{
+    flex-direction: column;
+    gap: 3rem;
+}
+.profile.card{
+    padding: 0.5rem;
+    width: 30rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.profile_img{
+    width: 15vw;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: red;
+}
+.profile_buttons button{
+    background-color: transparent;
+}
+/*Profile Ends here*/
 /*Main ends here*/
 /*Footer Starts here*/
 .footer{

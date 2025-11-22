@@ -352,19 +352,19 @@ textarea{
 }
 /*Profile Ends here*/
 /*Contact starts here*/
-.contact-section{
+.contact-section{/*Changes this*/
     min-height: 52vh;
 
 }
-.contact-container{
+.contact-container{/*Changes this*/
     margin-top: 5rem;
 }
-.contact-address{
+.contact-address{/*Changes this*/
     flex: 1;
     gap: 2rem;
     flex-direction: column;
 }
-.contact_map{
+.contact_map{/*Changes this*/
     width: 80%;
 }
 /*Contact Ends here*/
@@ -408,20 +408,20 @@ textarea{
         grid-template-columns: repeat(2,minmax(0,1fr));
     }
     .cart_items,
-    .cart_payment{
+    .cart_payment{/*Changes this*/
         width: 90%;
     }
     .form, 
-    .form-control{
+    .form-control{/*Changes this*/
         width: 100%;
     }
-    .form-control input, textarea{
+    .form-control input, textarea{/*Changes this*/
         width: 80%;
     }
-    .contact-address{
+    .contact-address{/*Changes this*/
         width: 100%;
     }
-    .register .card,
+    .register .card,/*Changes this*/
     .login .card{
       width: 90%;
     }

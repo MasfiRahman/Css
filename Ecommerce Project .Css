@@ -289,7 +289,7 @@ main{
 /*Registerand Login Starts here*/
 .register,
 .login{/*Working starts  here for Register  page design*/
-    display: flex; 
+    display: flex; /*Changes this */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -297,7 +297,7 @@ main{
     min-height: 60vh;
 }
 .register.card,
-.login.card{
+.login.card{/*Chnages this */
     width: 45rem;
 }
 .form{

@@ -286,16 +286,18 @@ main{
     gap: 1rem;
 }
 /*Product Details Ends  Here*/
-/*Register Starts here*/
-.register{/*Working starts  here for Register page design*/
-    display: flex;
+/*Registerand Login Starts here*/
+.register,
+.login{/*Working starts  here for Register  page design*/
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     min-height: 60vh;
 }
-.register.card{
+.register.card,
+.login.card{
     width: 45rem;
 }
 .form{
@@ -314,6 +316,7 @@ textarea{
     padding: 0.5rem;
     border: 1px solid;
     resize: none;
+    width: 27rem;
 }
 .form-control textarea{
     resize: none;
@@ -325,7 +328,7 @@ textarea{
 .contact-btn{
     width: 30%;
 }
-/*Register Ends here*/
+/*Register and Login Ends here*/
 /*Main ends here*/
 /*Footer Starts here*/
 .footer{

@@ -296,8 +296,8 @@ main{
     gap: 3rem;
     min-height: 60vh;
 }
-.register.card,
-.login.card{
+.register .card,
+.login .card{
     width: 45rem;
 }
 .form{
@@ -324,6 +324,7 @@ textarea{
 }
 .form-btn-field{
     border-radius: 0.6rem;
+    height: 30px;
 }
 .contact-btn{
     width: 30%;
@@ -350,6 +351,23 @@ textarea{
     background-color: transparent;/*Working ends this part*/
 }
 /*Profile Ends here*/
+/*Contact starts here*/
+.contact-section{
+    min-height: 52vh;
+
+}
+.contact-container{
+    margin-top: 5rem;
+}
+.contact-address{
+    flex: 1;
+    gap: 2rem;
+    flex-direction: column;
+}
+.contact_map{
+    width: 80%;
+}
+/*Contact Ends here*/
 /*Main ends here*/
 /*Footer Starts here*/
 .footer{
@@ -388,6 +406,24 @@ textarea{
     }
     .products{
         grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .cart_items,
+    .cart_payment{
+        width: 90%;
+    }
+    .form, 
+    .form-control{
+        width: 100%;
+    }
+    .form-control input, textarea{
+        width: 80%;
+    }
+    .contact-address{
+        width: 100%;
+    }
+    .register .card,
+    .login .card{
+      width: 90%;
     }
 }
 @media (max-width:768px) {

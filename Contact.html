@@ -40,7 +40,40 @@
 
     <!--Navbar ends here-->
     <main>
-        <h2>Contact Page</h2><!--Adding New Name as Contact Page-->
+        <section class="contact-section">
+            <h2 class="sectin-title text-center">Contact Us</h2>
+            <div class="contact-container flex-center">
+                <form action="" class="form card">
+                    <div class="form-control flex-center">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="">Messege</label>
+                        <textarea name="messege" id="messege"></textarea>
+                    </div>
+                     <div class="form-control flex-center">
+                        <button type="submit"class="btn contact-btn form-btn-field">Submit</button><!--Ends here-->
+                    </div>
+                </form>
+                <div class="contact-address flex-space-around">
+                    <address>
+                    <h4>Address :</h4>
+                    <p>124 middle badda</p>
+                    <p>Dhaka-1203</p>
+                    <br/>
+                    <span>Call : </span>
+                    <a href="tel:+92374786904">+92374786904</a>
+                    </address>
+                    <iframe class="contact_map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747159.818734138!2d87.70444671394438!3d23.484412826631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1763841246629!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </section>
     </main>
     <!--Footer Starts here-->
     <footer class="footer flex-space-around">

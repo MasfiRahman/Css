@@ -73,6 +73,9 @@ img{
 .text-center{
     text-align: center;
 }
+.section-title{
+    font-size: 2rem;
+}
 /*reset code and common ends here*/
 /*Navbar starts here*/
 #menu-icon{
